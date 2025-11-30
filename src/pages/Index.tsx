@@ -21,7 +21,7 @@ const Index = () => {
       turns: 18,
       record: '1:42.351',
       available: true,
-      image: '/placeholder.svg'
+      image: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/ee276495-72b5-4c62-9bf9-7fbca0d4bbce.jpg'
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ const Index = () => {
       turns: 14,
       record: '1:38.122',
       available: true,
-      image: '/placeholder.svg'
+      image: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/18e94e02-6b63-44f6-92c9-e220c20f817c.jpg'
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ const Index = () => {
       turns: 22,
       record: '1:55.847',
       available: true,
-      image: '/placeholder.svg'
+      image: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/6dae6359-0c0f-4f6f-aec6-e2cb5b19a282.jpg'
     }
   ];
 
@@ -55,18 +55,18 @@ const Index = () => {
   ];
 
   const leaderboard = [
-    { rank: 1, name: 'Александр Петров', time: '1:38.122', points: 2847, avatar: '/placeholder.svg' },
-    { rank: 2, name: 'Михаил Иванов', time: '1:39.451', points: 2765, avatar: '/placeholder.svg' },
-    { rank: 3, name: 'Дмитрий Сидоров', time: '1:40.892', points: 2698, avatar: '/placeholder.svg' },
-    { rank: 4, name: 'Сергей Козлов', time: '1:42.234', points: 2543, avatar: '/placeholder.svg' },
-    { rank: 5, name: 'Андрей Морозов', time: '1:43.567', points: 2487, avatar: '/placeholder.svg' }
+    { rank: 1, name: 'Александр Петров', time: '1:38.122', points: 2847, avatar: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/269a2bc3-1b05-4702-87fc-88c2db3a9ce3.jpg' },
+    { rank: 2, name: 'Михаил Иванов', time: '1:39.451', points: 2765, avatar: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/c5d23747-e38b-4d92-af86-733edd083973.jpg' },
+    { rank: 3, name: 'Дмитрий Сидоров', time: '1:40.892', points: 2698, avatar: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/04cbd0b3-82c5-43b5-bf92-bf9e809c2d79.jpg' },
+    { rank: 4, name: 'Сергей Козлов', time: '1:42.234', points: 2543, avatar: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/269a2bc3-1b05-4702-87fc-88c2db3a9ce3.jpg' },
+    { rank: 5, name: 'Андрей Морозов', time: '1:43.567', points: 2487, avatar: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/c5d23747-e38b-4d92-af86-733edd083973.jpg' }
   ];
 
   const gallery = [
-    { id: 1, title: 'Победный финиш', image: '/placeholder.svg' },
-    { id: 2, title: 'Трасса GMX-1', image: '/placeholder.svg' },
-    { id: 3, title: 'Подиум чемпионов', image: '/placeholder.svg' },
-    { id: 4, title: 'Вечерние гонки', image: '/placeholder.svg' }
+    { id: 1, title: 'Победный финиш', image: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/57e625b2-fdc1-4c49-86ac-307e86cbccca.jpg' },
+    { id: 2, title: 'Трасса GMX-1', image: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/6dae6359-0c0f-4f6f-aec6-e2cb5b19a282.jpg' },
+    { id: 3, title: 'Подиум чемпионов', image: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/7d45761a-5d75-46da-9689-696d77bb7be7.jpg' },
+    { id: 4, title: 'Вечерние гонки', image: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/e7857856-b1a6-4388-bae8-b0bf69d47924.jpg' }
   ];
 
   return (
