@@ -58,8 +58,8 @@ const Index = () => {
     { rank: 1, name: 'Александр Петров', time: '1:38.122', points: 2847, avatar: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/269a2bc3-1b05-4702-87fc-88c2db3a9ce3.jpg' },
     { rank: 2, name: 'Михаил Иванов', time: '1:39.451', points: 2765, avatar: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/c5d23747-e38b-4d92-af86-733edd083973.jpg' },
     { rank: 3, name: 'Дмитрий Сидоров', time: '1:40.892', points: 2698, avatar: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/04cbd0b3-82c5-43b5-bf92-bf9e809c2d79.jpg' },
-    { rank: 4, name: 'Сергей Козлов', time: '1:42.234', points: 2543, avatar: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/269a2bc3-1b05-4702-87fc-88c2db3a9ce3.jpg' },
-    { rank: 5, name: 'Андрей Морозов', time: '1:43.567', points: 2487, avatar: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/c5d23747-e38b-4d92-af86-733edd083973.jpg' }
+    { rank: 4, name: 'Сергей Козлов', time: '1:42.234', points: 2543, avatar: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/68d5d28d-82de-4a75-b220-5ad0fe2b4c1f.jpg' },
+    { rank: 5, name: 'Андрей Морозов', time: '1:43.567', points: 2487, avatar: 'https://cdn.poehali.dev/projects/c98e27a0-b2f4-4963-b49b-41f5c104fe12/files/45c4d616-3537-40e4-b398-02975f31ad70.jpg' }
   ];
 
   const gallery = [
