@@ -5,7 +5,9 @@ import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Calendar } from '@/components/ui/calendar';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import Icon from '@/components/ui/icon';
+import { SupportChat } from '@/components/SupportChat';
 
 const Index = () => {
   const [selectedTrack, setSelectedTrack] = useState<string | null>(null);
@@ -369,35 +371,87 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4">
+      <section id="contacts" className="py-16 px-4">
         <div className="container mx-auto">
-          <Card className="max-w-3xl mx-auto bg-primary text-primary-foreground">
-            <CardHeader className="text-center">
-              <CardTitle className="text-3xl mb-2">Контакты</CardTitle>
-              <CardDescription className="text-primary-foreground/80 text-base">
-                Свяжитесь с нами для бронирования или консультации
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-3 gap-6 text-center">
-                <div>
-                  <Icon name="Phone" size={32} className="mx-auto mb-2" />
-                  <p className="font-semibold">+7 (495) 123-45-67</p>
-                  <p className="text-sm text-primary-foreground/80">Пн-Вс 9:00-21:00</p>
+          <div className="text-center mb-12">
+            <h3 className="text-4xl font-bold mb-4 text-foreground">Контакты</h3>
+            <p className="text-muted-foreground text-lg">Свяжитесь с нами удобным способом</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <Card className="bg-primary text-primary-foreground">
+              <CardHeader className="text-center">
+                <CardTitle className="text-2xl mb-2">Наши контакты</CardTitle>
+                <CardDescription className="text-primary-foreground/80">
+                  Традиционные способы связи
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-full bg-primary-foreground/20 flex items-center justify-center shrink-0">
+                      <Icon name="Phone" size={24} />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-lg">+7 (495) 123-45-67</p>
+                      <p className="text-sm text-primary-foreground/80">Пн-Вс 9:00-21:00</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-full bg-primary-foreground/20 flex items-center justify-center shrink-0">
+                      <Icon name="Mail" size={24} />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-lg">info@racetrack.pro</p>
+                      <p className="text-sm text-primary-foreground/80">Ответим в течение часа</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-full bg-primary-foreground/20 flex items-center justify-center shrink-0">
+                      <Icon name="MapPin" size={24} />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-lg">Москва, Гоночная ул. 1</p>
+                      <p className="text-sm text-primary-foreground/80">Автодром «Профи»</p>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <Icon name="Mail" size={32} className="mx-auto mb-2" />
-                  <p className="font-semibold">info@racetrack.pro</p>
-                  <p className="text-sm text-primary-foreground/80">Ответим в течение часа</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-primary">
+              <CardHeader className="text-center">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
+                  <Icon name="MessageSquare" size={32} className="text-primary" />
                 </div>
-                <div>
-                  <Icon name="MapPin" size={32} className="mx-auto mb-2" />
-                  <p className="font-semibold">Москва, Гоночная ул. 1</p>
-                  <p className="text-sm text-primary-foreground/80">Автодром «Профи»</p>
+                <CardTitle className="text-2xl mb-2">Чат с поддержкой</CardTitle>
+                <CardDescription>ИИ-ассистент ответит мгновенно</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-muted-foreground text-center">
+                  Получите быстрые ответы на вопросы о трассах, бронировании, ценах и требованиях
+                </p>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-lg py-6">
+                      <Icon name="MessagesSquare" size={20} className="mr-2" />
+                      Открыть чат
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-5xl h-[90vh] p-0">
+                    <DialogHeader className="sr-only">
+                      <DialogTitle>Чат с техподдержкой</DialogTitle>
+                    </DialogHeader>
+                    <SupportChat />
+                  </DialogContent>
+                </Dialog>
+                <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
+                  <Icon name="Zap" size={16} className="text-primary" />
+                  <span>Обычно отвечаем за несколько секунд</span>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
